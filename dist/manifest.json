@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Chrome Extension Starter",
-    "description": "A Chrome Extension starter kit",
+    "name": "Domain Blocker",
+    "description": "Block requests to specific domains to protect your privacy",
     "version": "1.0.0",
     "action": {
         "default_icon": {
@@ -20,7 +20,14 @@
         "48": "icon-48.png",
         "128": "icon-128.png"
     },
-    "host_permissions": ["https:\/\/*/*"],
-    "permissions": ["tabs", "activeTab", "notifications", "scripting"]
+    "host_permissions": ["<all_urls>"],
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "storage",
+        "tabs",
+        "activeTab",
+        "scripting"
+    ]
 }
 
